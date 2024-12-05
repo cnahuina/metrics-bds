@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,10 +12,13 @@
             padding: 0;
             background-color: #f9f9f9;
         }
-        h1, h2 {
+
+        h1,
+        h2 {
             text-align: center;
             color: #333;
         }
+
         .content {
             max-width: 60%;
             margin: auto;
@@ -24,6 +27,7 @@
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
+
         .charts-container {
             display: flex;
             justify-content: space-around;
@@ -31,45 +35,85 @@
             flex-wrap: wrap;
             margin-top: 20px;
         }
+
         .chart {
-           
+
             margin: 5px;
         }
-        .bars , .pie{
+
+        .bars,
+        .pie {
             width: 40%;
         }
+
         canvas {
             width: 100% !important;
             height: auto !important;
         }
+
         table {
             width: 100%;
             border-collapse: collapse;
             margin: 20px 0;
         }
-        table, th, td {
+
+        table,
+        th,
+        td {
             border: 1px solid #ddd;
         }
-        th, td {
+
+        th,
+        td {
             padding: 12px;
             text-align: left;
         }
+
         th {
             background-color: #f4f4f4;
         }
-        .section{
+
+        .section {
             padding: 40px 0;
             background-color: #F9FAFA
         }
-        .section2{
+
+        .section2 {
             padding: 40px 0;
+        }
+
+        *{
+            box-sizing: border-box;
+        }
+        @media screen and (max-width: 480px) {
+            .content {
+                width: 100%!important;
+                max-width: 100%;
+            }
+
+            .charts-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 32px;
+                margin-top: 20px;
+            }
+
+            .bars,
+            .pie {
+                width: 100%;
+            }
         }
     </style>
 </head>
+
 <body>
     <div class="content">
         <h1>Métricas de uso de Componentes</h1>
-        <p>La siguiente página muestra información sobre el uso de componentes en el producto "<strong>Portal de Configuraciones</strong>".</p>
+        <p>La siguiente página muestra información sobre el uso de componentes en el producto "<strong>Portal de
+                Configuraciones</strong>".</p>
         <p><strong>Versión de la librería:</strong> @bricks/ng-components v0.0.18</p>
         <p><strong>Productos adoptados:</strong> 1</p>
         <div class="section">
@@ -93,141 +137,141 @@
                     </tr>
                 </thead>
                 <tbody>
-    
+
                     <tr>
                         <td>bds-icon-button</td>
                         <td>40</td>
                     </tr>
-        
+
                     <tr>
                         <td>bds-input</td>
                         <td>38</td>
                     </tr>
-        
+
                     <tr>
                         <td>bds-button</td>
                         <td>26</td>
                     </tr>
-        
+
                     <tr>
                         <td>bds-input-select</td>
                         <td>25</td>
                     </tr>
-        
+
                     <tr>
                         <td>bds-card</td>
                         <td>17</td>
                     </tr>
-        
+
                     <tr>
                         <td>bds-input-password</td>
                         <td>8</td>
                     </tr>
-        
+
                     <tr>
                         <td>bds-pagination</td>
                         <td>5</td>
                     </tr>
-        
+
                     <tr>
                         <td>bds-alert</td>
                         <td>4</td>
                     </tr>
-        
+
                     <tr>
                         <td>bds-table</td>
                         <td>4</td>
                     </tr>
-        
+
                     <tr>
                         <td>bds-tooltip</td>
                         <td>2</td>
                     </tr>
-        
+
                     <tr>
                         <td>bds-date-picker</td>
                         <td>2</td>
                     </tr>
-        
+
                     <tr>
                         <td>bds-input-number</td>
                         <td>2</td>
                     </tr>
-        
+
                     <tr>
                         <td>bds-link</td>
                         <td>2</td>
                     </tr>
-        
+
                     <tr>
                         <td>bds-sidenav</td>
                         <td>1</td>
                     </tr>
-        
+
                     <tr>
                         <td>bds-header</td>
                         <td>1</td>
                     </tr>
-        
+
                     <tr>
                         <td>bds-checkbox</td>
                         <td>1</td>
                     </tr>
-        
+
                     <tr>
                         <td>bds-avatar</td>
                         <td>0</td>
                     </tr>
-        
+
                     <tr>
                         <td>bds-chip</td>
                         <td>0</td>
                     </tr>
-        
+
                     <tr>
                         <td>bds-input-search</td>
                         <td>0</td>
                     </tr>
-        
+
                     <tr>
                         <td>bds-loader-bar</td>
                         <td>0</td>
                     </tr>
-        
+
                     <tr>
                         <td>bds-loader-circle</td>
                         <td>0</td>
                     </tr>
-        
+
                     <tr>
                         <td>bds-stepper</td>
                         <td>0</td>
                     </tr>
-        
+
                     <tr>
                         <td>bds-tabs</td>
                         <td>0</td>
                     </tr>
-        
+
                     <tr>
                         <td>bds-textarea</td>
                         <td>0</td>
                     </tr>
-        
+
                     <tr>
                         <td>bds-switch</td>
                         <td>0</td>
                     </tr>
-        
+
                     <tr>
                         <td>bds-tag</td>
                         <td>0</td>
                     </tr>
-        
+
                 </tbody>
             </table>
         </div>
-       
+
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -280,4 +324,5 @@
         });
     </script>
 </body>
+
 </html>
